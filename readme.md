@@ -9,6 +9,20 @@ Simple API for blog posts.
 **PHP** 
 
   
+## Post Structure
+
+```json
+{
+    "id": 101,
+    "title": "TITLE",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "author": "God",
+    "category_id": 1,
+    "category_name": "Technology"
+}
+```
+
+  
 ## API Usage
 
 #### Create a post
@@ -19,11 +33,11 @@ Simple API for blog posts.
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :-------------------------------- |
-| `title`      | `string` | Title of the post you are creating. |
-| `body`      | `string` | Body of the post you are creating. |
+| `title`      | `string` | Title of the post you create. |
+| `body`      | `string` | Body of the post you create. |
 | `author`      | `string` | Author of the post. |
-| `category_id`      | `number` | The category id of the post you are creating. |
-| `category_name`      | `string` | The category name of the post you are creating. |
+| `category_id`      | `number` | The category id of the post you create. |
+| `category_name`      | `string` | The category name of the post you create. |
 
 #### Read all posts
 
@@ -54,12 +68,12 @@ Simple API for blog posts.
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `number` | Id of the post that you are updating. |
-| `title`      | `string` | Title of the post you are updating. |
-| `body`      | `string` | Body of the post you are updating. |
+| `id`      | `number` | Id of the post that you update. |
+| `title`      | `string` | Title of the post you update. |
+| `body`      | `string` | Body of the post you update. |
 | `author`      | `string` | Author of the post. |
-| `category_id`      | `number` | The category id of the post you are updating. |
-| `category_name`      | `string` | The category name of the post you are updating. |
+| `category_id`      | `number` | The category id of the post you update. |
+| `category_name`      | `string` | The category name of the post you update. |
 
 
 
@@ -73,4 +87,5 @@ Simple API for blog posts.
 | Parameter | Type     | Description                |
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `number` | Id of the post that you delete. |
+  
   
